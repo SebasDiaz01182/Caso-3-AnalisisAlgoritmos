@@ -1,7 +1,9 @@
 // C++ Cocktail Sort
 #include <bits/stdc++.h>
+#include<stdio.h>
 using namespace std;
- 
+
+
 void CocktailSort(int pLista[], int n){
     bool cambio = true;
     int primerIndice = 0;
@@ -35,20 +37,24 @@ void CocktailSort(int pLista[], int n){
         ++primerIndice;
     }
 }
- 
-void MostrarLista(int plista[], int n)
-{
-    for (int indiceLista = 0; indiceLista < n; indiceLista++)
-        cout<<plista[indiceLista]<<" ";
-    cout<<endl;
+
+
+void LlenarLista(int pLista[]){
+	srand(time(NULL));
+	for(int indice= 0; indice<100000; indice++){
+		pLista[indice]=rand()%(3000001-0);
+	}
 }
  
-int main()
-{
-    int lista[] = { 5, 1, 4, 2, 8, 0, 2 ,7,8,6,346,435,654,546,56,356,36,54};
+int main(){
+	int tiempoInicial, tiempoFinal;
+	tiempoInicial = clock();
+    int lista[100000];
+    LlenarLista(lista);
     int n = sizeof(lista) / sizeof(lista[0]);
     CocktailSort(lista, n);
-    cout<<"Resultado del algoritmo CocktailSort : "<<endl;
-    MostrarLista(lista, n);
+    tiempoFinal = clock();
+    cout<<"Algoritmo CocktailSort realizado con exito "<<endl;
+    printf("El tiempo  es de %d segundos\n", tiempoFinal - tiempoInicial);
     return 0;
 }
