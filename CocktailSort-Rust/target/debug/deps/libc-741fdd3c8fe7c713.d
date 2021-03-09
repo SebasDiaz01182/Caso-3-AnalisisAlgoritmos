@@ -1,0 +1,11 @@
+C:\Users\DELL\Desktop\Algoritmos\Cases\Caso-3-AnalisisAlgoritmos\CocktailSort-Rust\target\debug\deps\libc-741fdd3c8fe7c713.rmeta: C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\lib.rs C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\macros.rs C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\fixed_width_ints.rs C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\windows\mod.rs C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\windows\msvc.rs
+
+C:\Users\DELL\Desktop\Algoritmos\Cases\Caso-3-AnalisisAlgoritmos\CocktailSort-Rust\target\debug\deps\liblibc-741fdd3c8fe7c713.rlib: C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\lib.rs C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\macros.rs C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\fixed_width_ints.rs C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\windows\mod.rs C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\windows\msvc.rs
+
+C:\Users\DELL\Desktop\Algoritmos\Cases\Caso-3-AnalisisAlgoritmos\CocktailSort-Rust\target\debug\deps\libc-741fdd3c8fe7c713.d: C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\lib.rs C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\macros.rs C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\fixed_width_ints.rs C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\windows\mod.rs C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\windows\msvc.rs
+
+C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\lib.rs:
+C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\macros.rs:
+C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\fixed_width_ints.rs:
+C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\windows\mod.rs:
+C:\Users\DELL\.cargo\registry\src\github.com-1ecc6299db9ec823\libc-0.2.88\src\windows\msvc.rs:

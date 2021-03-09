@@ -55,6 +55,6 @@ int main(){
     CocktailSort(lista, n);
     tiempoFinal = clock();
     cout<<"Algoritmo CocktailSort realizado con exito "<<endl;
-    printf("El tiempo  es de %d segundos\n", tiempoFinal - tiempoInicial);
+    printf("El tiempo  es de %d milisegundos\n", tiempoFinal - tiempoInicial);
     return 0;
 }
