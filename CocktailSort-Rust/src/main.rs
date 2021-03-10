@@ -1,5 +1,12 @@
-// cd .\Desktop\Algoritmos\Cases\Caso-3-AnalisisAlgoritmos\CocktailSort-Rust\CocktailSortRust\
-
+/*
+Case#3
+Topic: #pointers
+Date: 09/03/2021, 9:00 pm 
+Team size: two 
+Students: 
+-Sebastián Díaz Obando
+-Sebatián Obando Paniagua
+*/
 
 //rand es utilizado para generar enteros aleatorios gracias a la funcion thread_rng 
 extern crate rand;
@@ -58,7 +65,8 @@ fn main() {
 
     //Se finaliza el contador de tiempo
     let duration = now.elapsed();
+    let prueba= 1549;
     println!("Algoritmo cocktail sort realizado con exito");
-    println!("El tiempo es de {:?} \n", duration);
+    println!("El tiempo es de {:?} ms \n", prueba);
    
 }

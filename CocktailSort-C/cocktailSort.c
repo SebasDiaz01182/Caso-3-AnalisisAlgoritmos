@@ -1,7 +1,29 @@
-
-#include  <stdio.h>
+/*
+Case#3
+Topic: #pointers
+Date: 09/03/2021, 9:00 pm 
+Team size: two 
+Students: 
+-Sebastián Díaz Obando
+-Sebatián Obando Paniagua
+*/
+#include <stdio.h>
 #include <time.h>
+#include<stdio.h>
+#include <sys/time.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/wait.h>
+#include <string.h>
+#include <stdio.h>
+#include <sys/stat.h>
+#include <ctype.h>
+#include <unistd.h>
+#include <errno.h>
+#include <fcntl.h>
 
+
+#define SIZE          8192
 
 void swap(int *x, int *y) {
     if(x == y)
@@ -30,31 +52,66 @@ void cocktailsort(int *a, size_t n) {
         }
     }
 }
+
+int mem_total ()
+{
+  char a[SIZE], *p, *q;
+  int data, stack;
+  int n, v, fd;
+  pid_t pid= getpid();
+
+  p = a;
+  sprintf (p, "/proc/%d/status", pid);
+  fd = open (p, O_RDONLY);
+  if (fd < 0)
+    return -1;
+  do
+    n = read (fd, p, SIZE);
+  while ((n < 0) && (errno == EINTR));
+  if (n < 0)
+    return -2;
+  do
+    v = close (fd);
+  while ((v < 0) && (errno == EINTR));
+  if (v < 0)
+    return -3;
+  data = stack = 0;
+  q = strstr (p, "VmData:");
+  if (q != NULL)
+    {
+      sscanf (q, "%*s %d", &data);
+      q = strstr (q, "VmStk:");
+      if (q != NULL)
+    sscanf (q, "%*s %d\n", &stack);
+    }
+  return (data + stack);
+}  
+
+void LlenarLista(int pLista[]){
+	srand(time(NULL));
+	for(int indice= 0; indice<100000; indice++){
+		pLista[indice]=rand()%(3000001-0);
+	}
+}
  
 int main(void) {
     
-    clock_t t;
-    t = clock();
-
-
-
-
-
-    int a[] = { 6, -3, 141, -4, 2, 0, 9, 5, 3, 2 };
+    //Inicia el contador de tiempo de ejecucion
+    int tiempoInicial, tiempoFinal;
+    tiempoInicial = clock();
+    
+    int a[100000];
+    LlenarLista(a);
     int i;
     size_t n = sizeof(a)/sizeof(a[0]);
-    printf("Array Original:\n");
-    for (i = 0; i < n; i++)
+    cocktailsort(a,n);
+    //Se finaliza el contador de tiempo
+    tiempoFinal = clock();
 
-        printf("%d%s", a[i], i == n - 1 ? "\n" : " ");
-    printf("\nArray Ordenado:\n");
-    cocktailsort(a, n);
-    for ( i = 0; i < n; ++i)
-        printf("%d ", a[i] );
-
-    t = clock() - t;
-    double time_taken = ((double)t)/CLOCKS_PER_SEC; // in seconds
-
-    printf("\n  \nThe program took %f seconds to execute in C \n", time_taken);
+    printf("\n  \nThe program took %ld milliseconds to execute in C \n", (tiempoFinal - tiempoInicial)*1000/CLOCKS_PER_SEC);
+    int memoryUsed = mem_total();
+    printf("The memory used was %d kilobytes \n",memoryUsed);
+    
     return 0;
+   
 }
