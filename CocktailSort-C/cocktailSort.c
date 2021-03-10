@@ -4,8 +4,8 @@ Topic: #pointers
 Date: 09/03/2021, 9:00 pm 
 Team size: two 
 Students: 
--Sebastián Díaz Obando
--Sebatián Obando Paniagua
+-Sebastiï¿½n Dï¿½az Obando
+-Sebatiï¿½n Obando Paniagua
 */
 #include <stdio.h>
 #include <time.h>
